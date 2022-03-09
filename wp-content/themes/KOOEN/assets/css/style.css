@@ -38,7 +38,6 @@ header .drawerNavigation {
   position: fixed;
   top: 0;
   right: 0;
-  /* height: 100vh; */
   background-color: #202020;
 }
 
@@ -54,6 +53,32 @@ header .visibilityZone {
   left: 0;
 }
 
+header .logo {
+  position: absolute;
+  line-height: 1;
+  top: 40px;
+  left: 18px;
+  width: 46px;
+}
+
+header .drawer {
+  position: absolute;
+}
+
+/* header .drawerToggle {
+
+} */
+
+header .drawerToggle span {
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
 header .menuZone {
   position: absolute;
   height: 100vh;
@@ -61,14 +86,6 @@ header .menuZone {
   background-image: url(../img/common/headerLogo.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-header .logo {
-  position: absolute;
-  line-height: 1;
-  top: 40px;
-  left: 18px;
-  width: 46px;
 }
 
 header .item {
@@ -93,5 +110,32 @@ header .item {
     top: 0;
     left: 127px;
     width: 252px;
+  }
+
+  header .drawer {
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+  }
+
+  header .drawerToggle {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    width: 18px;
+    height: 44px;
+  }
+
+  header .drawerToggle span:first-child {
+    left: 0;
+  }
+
+  header .drawerToggle span:nth-of-type(2) {
+    left: 50%;
+  }
+
+  header .drawerToggle span:last-child {
+    right: 0;
   }
 }
