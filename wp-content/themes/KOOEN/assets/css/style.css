@@ -1,0 +1,68 @@
+/*===================
+        base
+===================*/
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+}
+
+/*===================
+        global
+===================*/
+
+.container {
+  background-color: #fbfbfb;
+}
+
+/*================================
+	header
+=================================*/
+
+header .drawerNavigation {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #202020;
+}
+
+header .visibilityZone {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .logo {
+  position: absolute;
+  line-height: 1;
+  top: 40px;
+  left: 18px;
+  width: 46px;
+}
+
+header .item {
+  color: #fff;
+}
+
+@media only screen and (min-width: 421px) {
+  header .visibilityZone {
+    width: 80px;
+    height: 100%;
+  }
+}
