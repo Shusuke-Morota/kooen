@@ -38,14 +38,29 @@ header .drawerNavigation {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #202020;
+}
+
+header .navigationWrapper {
+  position: fixed;
+  top: 0;
+  text-align: center;
 }
 
 header .visibilityZone {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+header .menuZone {
+  position: absolute;
+  height: 100vh;
+  text-align: left;
+  background-image: url(../img/common/headerLogo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 header .logo {
@@ -61,8 +76,22 @@ header .item {
 }
 
 @media only screen and (min-width: 421px) {
+  header .navigationWrapper {
+    overflow: hidden;
+    right: -278px;
+    width: 358px;
+    height: 100vh;
+    background-color: #202020;
+  }
+
   header .visibilityZone {
     width: 80px;
     height: 100%;
+  }
+
+  header .menuZone {
+    top: 0;
+    left: 127px;
+    width: 252px;
   }
 }

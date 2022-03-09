@@ -16,11 +16,11 @@
             <div class="visibilityZone">
               <h1 class="logo">
                 <a href="<?php echo home_url('/'); ?>">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/Vector.svg" alt="ロゴ">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/Vector.svg" alt="logo">
                 </a>
               </h1>
               <div class="drawer">
-                <button class="drawerToggle">
+                <button type="button" class="drawerToggle">
                   <span></span>
                   <span></span>
                   <span></span>
