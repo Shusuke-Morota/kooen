@@ -25,117 +25,155 @@ a {
         global
 ===================*/
 
-.container {
+/* .container {
   background-color: #fbfbfb;
-}
+} */
 
 /*================================
 	header
 =================================*/
 
-header .drawerNavigation {
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #202020;
-}
-
 header .navigationWrapper {
   position: fixed;
-  top: 0;
-  text-align: center;
 }
 
-header .visibilityZone {
-  position: absolute;
-  top: 0;
-  left: 0;
+header .visibilityNavigation {
+  background-color: #202020;
 }
 
 header .logo {
   position: absolute;
   line-height: 1;
-  top: 40px;
-  left: 18px;
-  width: 46px;
 }
 
 header .drawer {
   position: absolute;
 }
 
-/* header .drawerToggle {
+header .toggle {
+}
 
-} */
-
-header .drawerToggle span {
+header .bar {
   position: absolute;
-  top: 50%;
+  top: 0;
   width: 1px;
   height: 100%;
   background-color: #fff;
   transform: translate(-50%, -50%);
-  transition: 0.3s;
+  transition: ease 0.3s;
 }
 
-header .menuZone {
+header .active .bar:first-child {
+  transform: rotate(45deg)
+}
+
+header .active .bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+header .active .bar:last-child {
+  transform: rotate(-45deg)
+}
+
+header .hiddenNavigation {
   position: absolute;
   height: 100vh;
   text-align: left;
+  background-color: #202020;
   background-image: url(../img/common/headerLogo.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 100% 0;
+  background-size: contain;
+  transition: 0.3s;
 }
 
-header .item {
-  color: #fff;
+header .service {
+  padding-bottom: 41px;
+}
+
+header .serviceLogo {
+  width: 70px;
+  height: 20px;
+}
+
+header .copyright {
+  width: 170px;
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 1;
 }
 
 @media only screen and (min-width: 421px) {
   header .navigationWrapper {
-    overflow: hidden;
-    right: -278px;
-    width: 358px;
     height: 100vh;
-    background-color: #202020;
   }
 
-  header .visibilityZone {
+  header .visibilityNavigation {
+    display: flex;
+
     width: 80px;
     height: 100%;
   }
 
-  header .menuZone {
-    top: 0;
-    left: 127px;
-    width: 252px;
+  header .logo {
+    top: 30px;
+    left: 17px;
+    width: 46px;
   }
 
   header .drawer {
     top: 50%;
-    left: 50%;
-    width: 80px;
-    height: 80px;
+    left: 90%;
+    margin-top: -40px;
+    margin-left: -40px;
   }
 
-  header .drawerToggle {
-    position: absolute;
-    top: 50%;
-    left: -10%;
-    width: 18px;
-    height: 44px;
+  header .toggle {
+    width: 17px;
+    height: 43px;
   }
 
-  header .drawerToggle span:first-child {
+  header .bar:first-child {
     left: 0;
   }
 
-  header .drawerToggle span:nth-of-type(2) {
+  header .bar:nth-of-type(2) {
     left: 50%;
   }
 
-  header .drawerToggle span:last-child {
-    right: 0;
+  header .bar:last-child {
+    left: 100%;
+  }
+
+  header .active .bar:first-child {
+    left: 50%;
+  }
+
+  header .active .bar:last-child {
+    left: 50%;
+  }
+
+  header .hiddenNavigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    top: 0;
+    left: 127px;
+    width: 252px;
+    padding-left: 20px;
+  }
+
+  header .list {
+    margin-top: 46px;
+  }
+
+  header .item + .item {
+    margin-top: 30px;
+  }
+
+  header .itemImage {
+    display: inline-block;
+    height: 25px;
   }
 }
