@@ -33,11 +33,14 @@ a {
 	header
 =================================*/
 
-header .navigationWrapper {
+header .headerContents {
+  z-index: 1000;
   position: fixed;
+  top: 0;
 }
 
-header .visibilityNavigation {
+header .navigationWrapper {
+  position: fixed;
   background-color: #202020;
 }
 
@@ -51,6 +54,7 @@ header .drawer {
 }
 
 header .toggle {
+  position: absolute;
 }
 
 header .bar {
@@ -104,13 +108,19 @@ header .copyright {
 }
 
 @media only screen and (min-width: 421px) {
+  header .headerContents {
+    right: 0;
+    height: 100vh;
+  }
+
   header .navigationWrapper {
+    overflow: hidden;
+    right: -278px;
+    width: 358px;
     height: 100vh;
   }
 
   header .visibilityNavigation {
-    display: flex;
-
     width: 80px;
     height: 100%;
   }
@@ -123,7 +133,7 @@ header .copyright {
 
   header .drawer {
     top: 50%;
-    left: 90%;
+    left: 20%;
     margin-top: -40px;
     margin-left: -40px;
   }
