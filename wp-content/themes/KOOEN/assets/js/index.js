@@ -3,12 +3,24 @@
 $(function() {
   const $toggle = $(".js-toggle");
 
-  function activeDrawer() {
+  function activeToggle() {
     $toggle.toggleClass("active");
   }
 
+  function openNavigation() {
+    const $navigationWrapper = $(".navigationWrapper");
+    $navigationWrapper.toggleClass("pcOpen");
+  }
+
+  function hideLogo() {
+    const $logo = $(".logo");
+    $logo.toggleClass("hide");
+  }
+
   function hamburgerMenu() {
-    activeDrawer();
+    activeToggle();
+    openNavigation();
+    hideLogo();
   }
 
   function setEvent() {

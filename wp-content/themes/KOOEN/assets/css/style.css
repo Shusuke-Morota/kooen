@@ -118,6 +118,12 @@ header .copyright {
     right: -278px;
     width: 358px;
     height: 100vh;
+    transition: 0.3s;
+  }
+
+  header .pcOpen {
+    right: -30px;
+    transition-duration: 0.5s;
   }
 
   header .visibilityNavigation {
@@ -129,6 +135,10 @@ header .copyright {
     top: 30px;
     left: 17px;
     width: 46px;
+  }
+
+  header .hide {
+    display: none;
   }
 
   header .drawer {
