@@ -9,13 +9,19 @@
         </h1>
         <ul class="arrows">
           <li class="arrow">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/contact_arrow.svg" alt="arrow">
+            <svg width="54" height="22" viewBox="0 0 54 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="modifiedArrow" d="M1.00002 2L26.9808 20L52.9615 2" stroke="#01D480" stroke-opacity="0.2" stroke-width="3"></path>
+            </svg>
           </li>
           <li class="arrow">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/contact_arrow.svg" alt="arrow">
+            <svg width="54" height="22" viewBox="0 0 54 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="modifiedArrow" d="M1.00002 2L26.9808 20L52.9615 2" stroke="#01D480" stroke-opacity="0.2" stroke-width="3"></path>
+            </svg>
           </li>
           <li class="arrow">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/contact_arrow.svg" alt="arrow">
+            <svg width="54" height="22" viewBox="0 0 54 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="modifiedArrow" d="M1.00002 2L26.9808 20L52.9615 2" stroke="#01D480" stroke-opacity="0.2" stroke-width="3"></path>
+            </svg>
           </li>
         </ul>
       </div>
