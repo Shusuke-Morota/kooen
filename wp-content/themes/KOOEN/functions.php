@@ -29,6 +29,7 @@ function read_assets() {
 function hooks() {
   add_action('wp_enqueue_scripts', 'read_assets');
   add_theme_support('post-thumbnails');
+  add_filter('show_admin_bar', '__return_false');
 }
 
 function init() {

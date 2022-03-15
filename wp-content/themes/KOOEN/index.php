@@ -4,7 +4,8 @@
     <section class="firstView">
       <div class="inner">
         <h1 class="logo">
-          <video src="assets/img/home/videos/fv_animation.mp4" autoplay muted></video>
+          <!-- <video src="assets/img/home/videos/fv_animation.mp4" autoplay muted></video> -->
+          <p class="box">mp4</p>
         </h1>
         <ul class="arrows">
           <li class="arrow">
