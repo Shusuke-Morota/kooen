@@ -21,6 +21,10 @@ a {
   color: inherit;
 }
 
+main {
+  background-color: #fbfbfb;;
+}
+
 /*===================
         global
 ===================*/
@@ -107,6 +111,10 @@ header .copyright {
   line-height: 1;
 }
 
+/*================================
+	topPage
+=================================*/
+
 @media only screen and (min-width: 421px) {
   header .headerContents {
     right: 0;
@@ -122,6 +130,7 @@ header .copyright {
   }
 
   header .pcOpen {
+    width: 380px;
     right: -30px;
     transition-duration: 0.5s;
   }
