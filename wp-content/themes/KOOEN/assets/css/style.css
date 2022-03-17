@@ -124,6 +124,19 @@ header .copyright {
   margin: auto;
 }
 
+.topPage .inner {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topPage .logoVideo {
+  mix-blend-mode: multiply;
+}
+
 
 
 @media only screen and (min-width: 421px) {
@@ -219,5 +232,167 @@ header .copyright {
 
   .topPage .firstView {
     width: 641px;
+  }
+
+  .topPage .logoVideo {
+    max-width: 684px;
+    width: 100%;
+  }
+
+  .topPage .arrows {
+    /* position: absolute; */
+    padding-top: 250px;
+  }
+
+  .topArrowAnimation {
+    animation-name: topChangeColor;
+    animation: topChangeColor 2s steps(6,start) 1s infinite;
+  }
+
+  @keyframes topChangeColor {
+    0% {
+      stroke-opacity: 0;
+    }
+
+    11% {
+      stroke-opacity: 0;
+    }
+
+    22% {
+      stroke-opacity: 0;
+    }
+
+    33% {
+      stroke: #01d480;
+      stroke-opacity: .1;
+    }
+
+    44% {
+      stroke: #01c18d;
+      stroke-opacity: .3;
+    }
+
+    55% {
+      stroke: #01ab9d;
+    }
+
+    66% {
+      stroke: #01c18d;
+      stroke-opacity: .5;
+    }
+
+    77% {
+      stroke: #01d480;
+      stroke-opacity: .2;
+    }
+
+    88% {
+      stroke-opacity: 0;
+    }
+
+    100% {
+      stroke-opacity: 0;
+    }
+  }
+
+  .middleArrowAnimation {
+    animation-name: middleChangeColor;
+    animation: middleChangeColor 2s steps(6,start) 1s infinite;
+  }
+
+  @keyframes middleChangeColor {
+    0% {
+      stroke-opacity: 0;
+    }
+
+    11% {
+      stroke-opacity: 0;
+    }
+
+    22% {
+      stroke-opacity: 0;
+    }
+
+    33% {
+      stroke-opacity: 0;
+    }
+
+    44% {
+      stroke: #01d480;
+      stroke-opacity: .1;
+    }
+
+    55% {
+      stroke: #01c18d;
+      stroke-opacity: .3;
+    }
+
+    66% {
+      stroke: #01ab9d;
+    }
+
+    77% {
+      stroke: #01c18d;
+      stroke-opacity: .5;
+    }
+
+    88% {
+      stroke: #01d480;
+      stroke-opacity: .2;
+    }
+
+    100% {
+      stroke-opacity: 0;
+    }
+  }
+
+  .bottomArrowAnimation {
+    animation-name: bottomChangeColor;
+    animation: bottomChangeColor 2s steps(6,start) 1s infinite;
+  }
+
+  @keyframes bottomChangeColor {
+  0% {
+    stroke-opacity: 0;
+  }
+
+  11% {
+    stroke-opacity: 0;
+  }
+
+  22% {
+    stroke-opacity: 0;
+  }
+
+  33% {
+    stroke-opacity: 0;
+  }
+
+  44% {
+    stroke-opacity: 0;
+  }
+
+  55% {
+    stroke: #01d480;
+    stroke-opacity: .1;
+  }
+
+  66% {
+    stroke: #01c18d;
+    stroke-opacity: .3;
+  }
+
+  77% {
+    stroke: #01ab9d;
+  }
+
+  88% {
+    stroke: #01c18d;
+    stroke-opacity: .5;
+  }
+
+  100% {
+    stroke: #01d480;
+    stroke-opacity: .2;
   }
 }
