@@ -27,5 +27,56 @@
         </ul>
       </div>
     </section>
+    <section class="statement">
+      <div class="inner">
+        <div class="block">
+          <div class="label">
+            <h2 class="blockTitle js-animate fadeDown is-show">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_statement.svg" alt="statement">
+            </h2>
+            <div class="statementLine statementLineColor"></div>
+          </div>
+          <div class="contents js-animate fadeUp is-show">
+            <h3 class="heading">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_heading.svg" alt="すべてのクリエイティブ企業を後方から支援します">
+            </h3>
+            <p class="text">
+              コーエンはさまざまな業態のクリエイティブ企業へのバックアップを行う会社です。<br>
+              <span>
+                常に顧客企業の皆様の効率向上を探求し、デジタルを駆使し、最善のサポートを模索し、より良い業務支援に取り組んでいきます。
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="block">
+          <div class="label">
+            <h2 class="blockTitle js-animate fadeDown is-show">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_origin.svg" alt="origin">
+            </h2>
+            <div class="originLine originLineColor"></div>
+          </div>
+          <div class="contents js-animate fadeUp is-show">
+            <ul class="originList">
+              <li class="originItem">
+                <img class="pcDisplay" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_list-01.svg" alt="クリエイティブ企業に対する”後方支援”">
+                <img class="spDisplay" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_list-01_sp.svg" alt="クリエイティブ企業に対する”後方支援”">
+              </li>
+              <li class="originItem">
+                <img class="pcDisplay" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_list-02.svg" alt="経営に尽力している”経営陣の方々への応援”">
+                <img class="spDisplay" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_list-02_sp.svg" alt="経営に尽力している”経営陣の方々への応援”">
+              </li>
+              <li class="originItem">
+                <img class="pcDisplay" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_list-03.svg" alt="後々までの縁を築きたいという”後縁”">
+                <img class="spDisplay" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_list-03_sp.svg" alt="後々までの縁を築きたいという”後縁”">
+              </li>
+              <li class="originItem">
+                <img class="pcDisplay" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_list-04.svg" alt="安らぎを求めて様々な人が集まる”公園”">
+                <img class="spDisplay" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/statement_list-04_sp.svg" alt="安らぎを求めて様々な人が集まる”公園”">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </main>
