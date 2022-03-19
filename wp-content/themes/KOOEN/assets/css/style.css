@@ -194,6 +194,39 @@ header .copyright {
   width: 100%;
 }
 
+.topPage .topLogo .inner {
+  padding-top: 163px;
+}
+
+.topPage .topLogo .bcgLogo {
+  margin: 0 auto;
+  opacity: 0.4;
+  -webkit-mask-image: url(../img/home/logo_logo.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-animation: cyclicBcgColor 8s ease infinite;
+  background-image: url(../img/home/logo_logo.svg);
+  background-position: center;
+  background: linear-gradient(45deg,#008856,#00a99d,#79d400);
+  background-size: 300% 300%;
+  animation: cyclicBcgColor 8s ease infinite;
+}
+
+@keyframes cyclicBcgColor {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 @media only screen and (min-width: 421px) {
 
 /*================================
@@ -308,7 +341,7 @@ header .copyright {
     left: 50%;
   }
 
-  .firstView .topArrowAnimation {
+  .topPage .firstView .topArrowAnimation {
     animation-name: topChangeColor;
     animation: topChangeColor 2s steps(6,start) 1s infinite;
   }
@@ -359,7 +392,7 @@ header .copyright {
     }
   }
 
-  .firstView .middleArrowAnimation {
+  .topPage .firstView .middleArrowAnimation {
     animation-name: middleChangeColor;
     animation: middleChangeColor 2s steps(6,start) 1s infinite;
   }
@@ -410,7 +443,7 @@ header .copyright {
     }
   }
 
-  .firstView .bottomArrowAnimation {
+  .topPage .firstView .bottomArrowAnimation {
     animation-name: bottomChangeColor;
     animation: bottomChangeColor 2s steps(6,start) 1s infinite;
   }
@@ -505,5 +538,10 @@ header .copyright {
 
   .topPage .statement .originItem:nth-of-type(4) {
     max-width: 353px;
+  }
+
+  .topPage .topLogo .bcgLogo {
+    width: 1120px;
+    height: 258px;
   }
 }

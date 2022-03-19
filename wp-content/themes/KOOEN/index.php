@@ -78,5 +78,10 @@
         </div>
       </div>
     </section>
+    <section class="topLogo">
+      <div class="inner">
+        <p class="bcgLogo"></p>
+      </div>
+    </section>
   </div>
 </main>
