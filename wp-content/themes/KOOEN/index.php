@@ -83,5 +83,22 @@
         <p class="bcgLogo"></p>
       </div>
     </section>
+    <section class="consulting">
+      <div class="inner">
+        <div class="sectionHeading js-animate fadeUp is-show">
+          <h2 class="sectionTitle">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/consulting_heading.svg" alt="consulting">
+          </h2>
+          <p class="sectionSubTitle">
+            企業を成長させるには経営管理体制の強化が必要不可欠です<br>
+            KOOENはクリエイティブ企業を特化したバックオフィス構築と運用をパッケージ化し提供いたします。
+          </p>
+        </div>
+        <div class="consultingImage js-animate fadeUp is-show">
+          <img class="pcConsultingFrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/consulting_flow.svg" alt="01ツール導入 02業務フロー確認 03業務フローの設計 04トライ＆エラー">
+          <img class="spConsultingFrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/consulting_flow_sp.svg" alt="01ツール導入 02業務フロー確認 03業務フローの設計 04トライ＆エラー">
+        </div>
+      </div>
+    </section>
   </div>
 </main>

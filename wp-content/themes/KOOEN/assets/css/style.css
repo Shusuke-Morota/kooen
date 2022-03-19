@@ -194,6 +194,10 @@ header .copyright {
   width: 100%;
 }
 
+/*================================
+	topLogo
+=================================*/
+
 .topPage .topLogo .inner {
   padding-top: 163px;
 }
@@ -225,6 +229,25 @@ header .copyright {
   100% {
     background-position: 0 50%;
   }
+}
+
+/*================================
+	consulting
+=================================*/
+
+.topPage .consulting .sectionHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topPage .consulting .sectionSubTitle {
+  text-align: center;
+}
+
+.topPage .consulting .consultingImage {
+  margin: auto;
 }
 
 @media only screen and (min-width: 421px) {
@@ -540,8 +563,37 @@ header .copyright {
     max-width: 353px;
   }
 
+/*================================
+	topLogo
+=================================*/
+
   .topPage .topLogo .bcgLogo {
     width: 1120px;
     height: 258px;
+  }
+
+/*================================
+	consulting
+=================================*/
+
+  .topPage .consulting {
+    padding-top: 182px;
+  }
+
+  .topPage .consulting .sectionTitle {
+    width: 212px;
+  }
+
+  .topPage .consulting .sectionSubTitle {
+    margin-top: 32px;
+  }
+
+  .topPage .consulting .consultingImage {
+    margin-top: 79px;
+    width: 780px;
+  }
+
+  .topPage .consulting .spConsultingFrow {
+    display: none;
   }
 }
