@@ -178,5 +178,43 @@
         </div>
       </div>
     </section>
+    <section class="what">
+      <div class="inner">
+        <div class="sectionHeading js-animate fadeUp is-show">
+          <h2 class="sectionTitle">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/what_we_do_headline.svg" alt="what we do">
+          </h2>
+          <p class="sectionSubTitle">
+            日常業務から奥深い経理業務まで幅広い領域のタスクを、ワンストップで対応します。
+          </p>
+        </div>
+        <ul class="supportedList">
+          <li class="supportedItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/whatwedo_list-01.svg" alt="MILL活用サポート">
+          </li>
+          <li class="supportedItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/whatwedo_list-02.svg" alt="売上管理">
+          </li>
+          <li class="supportedItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/whatwedo_list-03.svg" alt="外注支払業務">
+          </li>
+          <li class="supportedItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/whatwedo_list-04.svg" alt="月次PL作成">
+          </li>
+          <li class="supportedItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/whatwedo_list-05.svg" alt="経費精算チェック">
+          </li>
+          <li class="supportedItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/whatwedo_list-06.svg" alt="キャッシュフロー計算">
+          </li>
+          <li class="supportedItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/whatwedo_list-07.svg" alt="税理士対応">
+          </li>
+          <li class="supportedItem">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/whatwedo_list-08.svg" alt="管理業務コンサル">
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
 </main>
