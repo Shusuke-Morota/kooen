@@ -165,7 +165,15 @@
                 </ul>
               </div>
             </div>
-            <div class="serviceContent js-animate fadeUp is-show"></div>
+            <div class="serviceContent js-animate fadeUp is-show">
+              <div class="serviceHeadingArea">
+                <h3 class="serviceHeading">クリエイティブ企業のDXコンサルティング</h3>
+                <p class="serviceOperation">
+                  クラウドサービスを活用したデジタルトランスフォーメーション（DX）の導入支援を行います。<br>
+                  ひとことでDX化と言っても抱えている課題は企業ごとに異なります。弊社ではクリエイティブ企業が抱えるバックオフィス業務における課題に対し、課題の整理・運用フローの策定・各クラウドサービスの提案・導入支援など企業のDX推進を支援します。
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -264,7 +264,7 @@ header .copyright {
   font-size: 13px;
 }
 
-.topPage .services .cardBody {
+.topPage .services .serviceContent {
   border-left: 1px solid;
   border-image: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
   border-image-slice: 1;
