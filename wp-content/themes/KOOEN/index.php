@@ -142,7 +142,29 @@
                 </a>
               </div>
             </div>
-            <div class="serviceContent js-animate fadeUp is-show"></div>
+            <div class="serviceContent js-animate fadeUp is-show">
+              <div class="serviceHeadingArea">
+                <h3 class="serviceHeading">経理代行</h3>
+                <p class="serviceOperation">
+                  MILLにより可視化された経理課題を洗い出し、各種代行業務から各種フローの策定等のコンサルティングまでお客様の課題とご予算に合わせて幅広く対応いたします。
+                </p>
+              </div>
+              <div class="agencyWork">
+                <h4 class="serviceExample">対応可能な代行業務例</h4>
+                <ul class="serviceList">
+                  <li class="serviceItem">請求書発行</li>
+                  <li class="serviceItem">未収チェック</li>
+                  <li class="serviceItem">月次処理</li>
+                  <li class="serviceItem">税金納付</li>
+                  <li class="serviceItem">経費精算</li>
+                  <li class="serviceItem">給与計算</li>
+                  <li class="serviceItem">記帳代行</li>
+                  <li class="serviceItem">試算表作成</li>
+                  <li class="serviceItem">決算業務</li>
+                  <li class="serviceItem">税務署への各種申請</li>
+                </ul>
+              </div>
+            </div>
             <div class="serviceContent js-animate fadeUp is-show"></div>
           </div>
         </div>
