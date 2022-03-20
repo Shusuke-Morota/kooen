@@ -100,5 +100,53 @@
         </div>
       </div>
     </section>
+    <section class="services" id="service">
+      <div class="inner">
+        <div class="card">
+          <div class="cardHeading js-animate fadeUp is-show">
+            <h2 class="sectionTitle">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/services_headline.svg" alt="services">
+            </h2>
+            <p class="sectionSubTitle">
+              KOOENはクリエイティブ企業に特化したバックオフィス構築と運用をパッケージ化し提供いたします。
+            </p>
+          </div>
+          <div class="cardBody">
+            <div class="serviceContent js-animate fadeUp is-show">
+              <div class="serviceHeadingArea">
+                <h3 class="serviceHeading">業務基幹システム「MILL」運用</h3>
+                <p class="serviceOperation">
+                  業務管理システム「MILL」の運用サポートを行います。<br>
+                  導入時の初期設定はもちろん、MILLの機能を100％ご活用いただけるよう、お客様1社1社の課題に合わせ運用ルールの策定やそれに伴う設定サポートなど行います。
+                </p>
+              </div>
+              <div class="serviceDescriptionArea">
+                <p class="serviceLogo">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/mill_logo.svg" alt="MILL">
+                </p>
+                <div class="serviceDescription">
+                  <h4 class="serviceCatchphrase">クリエイティブ企業の管理はMILLでお任せ</h4>
+                  <p class="serviceText">
+                    MILLは、案件の予算管理を中心に顧客管理・売上管理・経理・精算・スタッフアサインなど、受託制作や映像制作などのクリエイティブ業務の必要な情報を一元管理できる業務管理システムです。
+                  </p>
+                </div>
+              </div>
+              <div class="serviceViewMore">
+                <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="serviceAnchor anchorPosition">
+                  <span class="anchorText">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/view_More.svg" alt="View More">
+                  </span>
+                  <span class="anchorArrow">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/arrow_anchor.svg">
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="serviceContent js-animate fadeUp is-show"></div>
+            <div class="serviceContent js-animate fadeUp is-show"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </main>

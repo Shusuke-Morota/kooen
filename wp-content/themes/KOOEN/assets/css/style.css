@@ -9,7 +9,7 @@ body {
   color: #656565;
   line-height: 1.8;
   font-size: 14px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: Noto Sans JP,sans-serif;
 }
 
 img {
@@ -248,6 +248,67 @@ header .copyright {
 
 .topPage .consulting .consultingImage {
   margin: auto;
+}
+
+/*================================
+	services
+=================================*/
+
+.topPage .services .card {
+  margin-left: auto;
+  background-color: #fcfcfc;
+  box-shadow: 0 0 40px rgb(0 0 0 / 5%);
+}
+
+.topPage .services .sectionSubTitle {
+  font-size: 13px;
+}
+
+.topPage .services .cardBody {
+  border-left: 1px solid;
+  border-image: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+  border-image-slice: 1;
+}
+
+.topPage .services .serviceHeading {
+  font-family: "Noto Serif JP",serif;
+  line-height: 1.4;
+  color: #222;
+}
+
+.topPage .services .serviceLogo {
+  width: 200px;
+}
+
+.topPage .services .serviceCatchphrase {
+  font-weight: 700;
+}
+
+.topPage .services .serviceAnchor {
+  margin-left: auto;
+  width: 118px;
+}
+
+.topPage .services .anchorPosition {
+  position: relative;
+  display: flex;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.topPage .services .anchorPosition:hover {
+  filter: hue-rotate(45deg);
+}
+
+.topPage .services .anchorText {
+  display: flex;
+  align-items: center;
+  height: 43px;
+}
+
+.topPage .services .anchorArrow {
+  position: absolute;
+  bottom: 5px;
 }
 
 @media only screen and (min-width: 421px) {
@@ -595,5 +656,58 @@ header .copyright {
 
   .topPage .consulting .spConsultingFrow {
     display: none;
+  }
+
+/*================================
+	service
+=================================*/
+
+  .topPage .services .inner {
+    padding: 154px 224px 0 0;
+  }
+
+  .topPage .services .card {
+    width: 840px;
+    padding: 108px 80px;
+  }
+
+  .topPage .services .sectionTitle {
+    width: 155px;
+  }
+
+  .topPage .services .sectionSubTitle {
+    margin-top: 32px;
+  }
+
+  .topPage .services .cardBody {
+    margin-top: 64px;
+  }
+
+  .topPage .services .serviceContent {
+    padding: 20px 0 20px 30px
+  }
+
+  .topPage .services .serviceHeading {
+    font-size: 24px;
+  }
+
+  .topPage .services .serviceDescriptionArea {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .topPage .services .serviceLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topPage .services .serviceDescription {
+    flex: 1;
+    margin-left: 24px;
+  }
+
+  .topPage .services .serviceViewMore {
+    margin-top: 16px;
   }
 }
