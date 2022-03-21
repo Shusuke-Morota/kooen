@@ -169,7 +169,7 @@ header .copyright {
   font-size: 13px;
 }
 
-.topPage span {
+.topPage .text span {
   display: block;
   margin-top: 8px;
 }
@@ -369,9 +369,107 @@ header .copyright {
   width: 286px;
 }
 
+/*================================
+	case study
+=================================*/
+
+.topPage .case .sectionTitle {
+  margin: auto;
+}
+
+.topPage .case .sectionSubTitle {
+  text-align: center;
+}
+
+.topPage .case .block {
+  display: flex;
+  justify-content: center;
+}
+
+.topPage .case .label {
+  display: flex;
+}
+
+.topPage .case .caseLine {
+  width: 1px;
+  margin-left: 8px;
+  background: #222;
+}
+
+.topPage .case .secondaryHeading {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Serif JP",serif;
+}
+
+.topPage .case .labelColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 20px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.topPage .case .issue {
+  background-color: #b3b3b3;
+}
+
+.topPage .case .issueText {
+  margin-left: 8px;
+}
+
+.topPage .case .caseList {
+  font-size: 13px;
+}
+
+.topPage .case .caseItem {
+  position: relative;
+  padding-left: 15px;
+}
+
+.topPage .case .caseItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #c4c4c4;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.topPage .case .caseCard {
+  border-left: 1px solid;
+  border-image: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+  border-image-slice: 1;
+  margin-top: 24px;
+  padding: 20px 24px;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 5%);
+}
+
+.topPage .case .solution {
+  background: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+}
+
+.topPage .case .caseText {
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+
+
 
 
 @media only screen and (min-width: 421px) {
+
+  .sectionSubTitle {
+    margin-top: 32px;
+  }
 
 /*================================
 	header
@@ -705,10 +803,6 @@ header .copyright {
     width: 212px;
   }
 
-  .topPage .consulting .sectionSubTitle {
-    margin-top: 32px;
-  }
-
   .topPage .consulting .consultingImage {
     margin-top: 79px;
     width: 780px;
@@ -733,10 +827,6 @@ header .copyright {
 
   .topPage .services .sectionTitle {
     width: 155px;
-  }
-
-  .topPage .services .sectionSubTitle {
-    margin-top: 32px;
   }
 
   .topPage .services .cardBody {
@@ -788,9 +878,6 @@ header .copyright {
     justify-content: center;
   }
 
-  .topPage .what .sectionSubTitle {
-    margin-top: 32px;
-  }
 
   .topPage .what .supportedList {
     max-width: 768px;
@@ -800,5 +887,68 @@ header .copyright {
 
   .topPage .what .supportedItem {
     width: 256px;
+  }
+
+/*================================
+	case study
+=================================*/
+
+  .topPage .case {
+    padding-top: 180px;
+  }
+
+  .topPage .case .sectionTitle {
+    width: 196px;
+  }
+
+  .topPage .case .cases {
+    margin-top: 64px;
+  }
+
+  .topPage .case .block + .block {
+    margin-top: 97px;
+  }
+
+  .topPage .case .caseLine {
+    min-height: 314px;
+  }
+
+  .topPage .case .caseDetails {
+    display: flex;
+    margin-left: 24px;
+  }
+
+  .topPage .case .caseImage {
+    width: 185px;
+    padding-left: 16px;
+  }
+
+  .topPage .case .caseContent {
+    width: 513px;
+    margin-left: 32px;
+  }
+
+  .topPage .case .secondaryHeading {
+    font-size: 18px;
+  }
+
+  .topPage .case .caseImage.pcNone {
+    display: none;
+  }
+
+  .topPage .case .caseList {
+    margin-top: 8px;
+  }
+
+  .topPage .case .caseItem {
+    top: 12px;
+  }
+
+  .topPage .case .caseItem::before {
+    top: 12px;
+  }
+
+  .topPage .case .caseCard {
+    width: 508px;
   }
 }

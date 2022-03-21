@@ -216,5 +216,132 @@
         </ul>
       </div>
     </section>
+    <section class="case">
+      <div class="inner">
+        <div class="sectionHeading">
+          <h2 class="sectionTitle">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_headline.svg" alt="case study">
+          </h2>
+          <p class="sectionSubTitle">
+            KOOENが具体的にどのようなサービスをご提供できるか事例を元にご説明します。
+          </p>
+        </div>
+        <div class="cases">
+          <div class="block">
+            <div class="label">
+              <h2 class="blockTitle js-animate fadeDown is-show">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_number01.svg" alt="case01">
+              </h2>
+              <div class="caseLine js-animate fadeDown is-show"></div>
+            </div>
+            <div class="caseDetails js-animate fadeUp is-show">
+              <p class="caseImage spNone">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_image_01.svg" alt="case01">
+              </p>
+              <div class="caseContent">
+                <h3 class="secondaryHeading">
+                  <span class="labelColor issue">課題</span>
+                  <span class="issueText">経営状況の可視化</span>
+                </h3>
+                <p class="caseImage pcNone">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_image_01.svg" alt="case01">
+                </p>
+                <ul class="caseList">
+                  <li class="caseItem">
+                    月次で締めないと月の売上・利益・CF状況がすぐに把握できない
+                  </li>
+                  <li class="caseItem">
+                    顧客予算や案件の作業効率など経営や人事戦略に関わる情報を把握できていない
+                  </li>
+                </ul>
+                <div class="caseCard">
+                  <p class="labelColor solution">解決</p>
+                  <p class="caseText">
+                    MILLを導入することで、会社全体の売上額、粗利率、納品数、前年比などを一画面でリアルタイムに確認できるようご提案。<br>
+                    顧客ごとの年間予算やディレクター・クリエイター等現場スタッフの工数可視化にもつながり、MILLで蓄積されたデータは注力すべき顧客・案件の方針や人事戦略・マネジメントにもご活用いただいております。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="label">
+              <h2 class="blockTitle js-animate fadeDown is-show">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_number02.svg" alt="case02">
+              </h2>
+              <div class="caseLine js-animate fadeDown is-show"></div>
+            </div>
+            <div class="caseDetails js-animate fadeUp is-show">
+              <p class="caseImage spNone">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_image_02.svg" alt="case02">
+              </p>
+              <div class="caseContent">
+                <h3 class="secondaryHeading">
+                  <span class="labelColor issue">課題</span>
+                  <span class="issueText">経常利益と会計の乖離</span>
+                </h3>
+                <p class="caseImage pcNone">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_image_02.svg" alt="case02">
+                </p>
+                <ul class="caseList">
+                  <li class="caseItem">
+                    見積額や実行予算額、精算額にズレが生じる
+                  </li>
+                  <li class="caseItem">
+                    経常数字と実際の会計に毎月乖離が生まれてしまっている
+                  </li>
+                </ul>
+                <div class="caseCard">
+                  <p class="labelColor solution">解決</p>
+                  <p class="caseText">
+                    乖離が起こっている原因解明・業務フローの改善提案・MILLの導入支援を行いました。<br>
+                    クリエイティブ企業ではよくありますが、案件を進める中で見積金額に変動があり、見積・実行予算・精算額・入金額の情報連携が正確にできていなかったため乖離が起こっておりました。<br>
+                    MILLを導入することで案件に紐づく全ての会計がリアルタイムに更新されるようになり、お客様の課題を改善することにつながりました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="label">
+              <h2 class="blockTitle js-animate fadeDown is-show">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_number03.svg" alt="case03">
+              </h2>
+              <div class="caseLine js-animate fadeDown is-show"></div>
+            </div>
+            <div class="caseDetails js-animate fadeUp is-show">
+              <p class="caseImage spNone">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_image_03.svg" alt="case03">
+              </p>
+              <div class="caseContent">
+                <h3 class="secondaryHeading">
+                  <span class="labelColor issue">課題</span>
+                  <span class="issueText">会計の効率とDX化</span>
+                </h3>
+                <p class="caseImage pcNone">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/case_study_image_03.svg" alt="case03">
+                </p>
+                <ul class="caseList">
+                  <li class="caseItem">
+                    案件管理、予算管理、経費精算などの各業務を全てExcelで行なっており、情報が分散している
+                  </li>
+                  <li class="caseItem">
+                    現場とバックオフィスで無駄な確認作業や情報連携が多く、双方に負担が掛かっている
+                  </li>
+                </ul>
+                <div class="caseCard">
+                  <p class="labelColor solution">解決</p>
+                  <p class="caseText">
+                  MILLの導入支援および会計業務のDX化を支援しました。<br>
+                  MILLを利用することで営業・制作現場・バックオフィスがシームレスに連携可能となり、情報の一元管理ができるようになりました。<br>
+                  さらに、会計ソフト「freee」との連携や各種会計フローの策定を行うことで、入出金や経費精算など煩雑になっていた会計業務をスムーズかつ正確に行えるようになり、工数削減につながりました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </main>
