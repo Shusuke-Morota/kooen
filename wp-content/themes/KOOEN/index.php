@@ -552,6 +552,71 @@
             </ul>
           </div>
         </div>
+        <div class="attentionWrapper">
+          <p class="attention">※全プラン原則1年契約となります。</p>
+        </div>
+        <div class="introduction">
+          <div class="introductionInner">
+            <div class="card js-animate fadeUp is-show">
+              <div class="label">
+                <h3 class="cardTitle">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_company.svg" alt="company">
+                </h3>
+                <div class="packageLine"></div>
+              </div>
+              <div class="cardBody">
+                <div class="guideContent">
+                  <h3 class="companyLogo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_logo.svg" alt="KOOEN">
+                  </h3>
+                  <p class="guideText">
+                    KOOENの会社情報をご案内します。<br>
+                    ご郵送の際の宛先やお電話でのご連絡の際はこちらの情報をご確認ください。
+                  </p>
+                </div>
+                <div class="viewMore">
+                  <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="serviceAnchor anchorPosition">
+                    <span class="anchorText">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/view_More.svg" alt="View More">
+                    </span>
+                    <span class="anchorArrow">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/arrow_anchor.svg">
+                  </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card js-animate fadeUp is-show">
+              <div class="label">
+                <h3 class="cardTitle">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_recruit.svg" alt="recruit">
+                </h3>
+                <div class="packageLine"></div>
+              </div>
+              <div class="cardBody">
+                <div class="guideContent">
+                  <h3 class="companyLogo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_recruit-image.svg">
+                  </h3>
+                  <p class="guideText">
+                    KOOENの会社情報をご案内します。<br>
+                    ご郵送の際の宛先やお電話でのご連絡の際はこちらの情報をご確認ください。
+                  </p>
+                </div>
+                <div class="viewMore">
+                  <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="serviceAnchor anchorPosition">
+                    <span class="anchorText">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/view_More.svg" alt="View More">
+                    </span>
+                    <span class="anchorArrow">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/arrow_anchor.svg">
+                  </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>

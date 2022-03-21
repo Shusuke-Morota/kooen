@@ -31,6 +31,16 @@ a {
 }
 
 /*================================
+	common line
+=================================*/
+
+/* .commonLine {
+  width: 1px;
+  margin-left: 8px;
+  background-color: #222;
+} */
+
+/*================================
 	view more anchor
 =================================*/
 
@@ -728,6 +738,45 @@ header .copyright {
   align-items: center;
 }
 
+.topPage .package .attentionWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.topPage .package .attention {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topPage .package .card {
+  position: relative;
+  display: flex;
+  display: -webkit-box;
+  background: #fcfcfc;
+  -webkit-box-shadow: 0 0 40px rgb(0 0 0 / 8%);
+  box-shadow: 0 0 40px rgb(0 0 0 / 8%);
+  font-size: 13px;
+}
+
+.topPage .package .card + .card {
+  margin-top: 70px;
+}
+
+.topPage .package .label {
+  display: flex;
+}
+
+.topPage .package .packageLine {
+  width: 1px;
+  margin-left: 8px;
+  background-color: #222;
+}
+
+.topPage .package .guideText {
+  font-size: 13px;
+}
+
 
 @media only screen and (max-width: 1280px) and (min-width: 1141px) {
 
@@ -1295,5 +1344,58 @@ header .copyright {
 
   .topPage .package .minimumPrice {
     width: 248px;
+  }
+
+  .topPage .package .attentionWrapper {
+    font-size: 12px;
+  }
+
+  .topPage .package .attention {
+    width: 1120px;
+  }
+
+  .topPage .package .introduction {
+    background-image: url(../img/home/package_bg.svg);
+    background-repeat: no-repeat;
+    background-position: 80px 0;
+    padding-top: 90px;
+  }
+
+  .topPage .package .introductionInner {
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .topPage .package .card {
+    padding: 82px 80px;
+    width: 840px;
+    margin-left: auto;
+  }
+
+  .topPage .package .packageLine {
+    min-height: 173px;
+  }
+
+  .topPage .package .cardBody {
+    margin-left: 40px;
+    position: relative;
+  }
+
+  .topPage .package .guideContent {
+    display: flex;
+    padding-top: 25px;
+  }
+
+  .topPage .package .companyLogo {
+    display: flex;
+    align-items: center;
+    min-width: 236px;
+  }
+
+  .topPage .package .guideText {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
   }
 }
