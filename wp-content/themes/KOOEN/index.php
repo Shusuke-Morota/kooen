@@ -131,7 +131,7 @@
                   </p>
                 </div>
               </div>
-              <div class="serviceViewMore">
+              <div class="viewMore">
                 <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="serviceAnchor anchorPosition">
                   <span class="anchorText">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/view_More.svg" alt="View More">
@@ -340,6 +340,85 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="inner">
+        <div class="sectionHeading">
+          <h2 class="sectionTitle">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/qanda.svg" alt="Q&A">
+          </h2>
+          <p class="sectionSubTitle">
+            KOOENがご提供するサービスについてのQ&Aです。<br>
+            記載のない内容ついては<a href="#" class="contactLink">メールフォーム</a>からお気軽にご相談ください。
+          </p>
+        </div>
+        <ul class="faqList">
+          <li class="faqItem js-animate fadeUp is-show">
+            <div class="question">
+              <p class="mark">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/q_mark.svg" alt="Q">
+              </p>
+              <p class="text">
+                クリエイティブ企業の中でもどんな業種の企業が利用していますか？
+              </p>
+            </div>
+            <div class="answer">
+              <p class="mark">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/a_mark.svg" alt="A">
+              </p>
+              <p class="text">
+                映像制作会社、WEB制作会社、イベント会社、CG会社、編集スタジオ、演劇制作会社、エンタメ企画制作会社など、幅広くご利用いただいております。
+              </p>
+            </div>
+          </li>
+          <li class="faqItem js-animate fadeUp is-show">
+            <div class="question">
+              <p class="mark">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/q_mark.svg" alt="Q">
+              </p>
+              <p class="text">
+                MILLは契約せずに経理代行だけお願いすることはできますか？
+              </p>
+            </div>
+            <div class="answer">
+              <p class="mark">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/a_mark.svg" alt="A">
+              </p>
+              <p class="text">
+                KOOENにはMILL導入を前提にしたサービスパッケージしかご用意がありません。経理代行のみのサービスなどは行っておりませんので、ご了承ください。
+              </p>
+            </div>
+          </li>
+          <li class="faqItem js-animate fadeUp is-show">
+            <div class="question">
+              <p class="mark">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/q_mark.svg" alt="Q">
+              </p>
+              <p class="text">
+                地方の企業ですが対応可能でしょうか？
+              </p>
+            </div>
+            <div class="answer">
+              <p class="mark">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/a_mark.svg" alt="A">
+              </p>
+              <p class="text">
+                もちろん問題ございません。日本全国どこでも導入可能です。
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="viewMore">
+          <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="serviceAnchor anchorPosition">
+            <span class="anchorText">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/view_More.svg" alt="View More">
+            </span>
+            <span class="anchorArrow">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/arrow_anchor.svg">
+            </span>
+          </a>
         </div>
       </div>
     </section>

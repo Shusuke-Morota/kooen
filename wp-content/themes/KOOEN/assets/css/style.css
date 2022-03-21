@@ -22,13 +22,40 @@ a {
   color: inherit;
 }
 
-main {
-  /* background-color: #fbfbfb;; */
-}
-
 /*===================
         global
 ===================*/
+
+.topPage {
+  background-color: #fbfbfb;
+}
+
+.serviceAnchor {
+  margin-left: auto;
+  width: 118px;
+}
+
+.anchorPosition {
+  position: relative;
+  display: flex;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.anchorPosition:hover {
+  filter: hue-rotate(45deg);
+}
+
+.anchorText {
+  display: flex;
+  align-items: center;
+  height: 43px;
+}
+
+.anchorArrow {
+  position: absolute;
+  bottom: 5px;
+}
 
 /*================================
 	header
@@ -285,33 +312,6 @@ header .copyright {
   font-weight: 700;
 }
 
-.topPage .services .serviceAnchor {
-  margin-left: auto;
-  width: 118px;
-}
-
-.topPage .services .anchorPosition {
-  position: relative;
-  display: flex;
-  opacity: 0.8;
-  transition: all 0.3s;
-}
-
-.topPage .services .anchorPosition:hover {
-  filter: hue-rotate(45deg);
-}
-
-.topPage .services .anchorText {
-  display: flex;
-  align-items: center;
-  height: 43px;
-}
-
-.topPage .services .anchorArrow {
-  position: absolute;
-  bottom: 5px;
-}
-
 .topPage .services .agencyWork {
   margin-top: 24px;
 }
@@ -461,9 +461,77 @@ header .copyright {
   font-size: 13px;
 }
 
+/*================================
+	faq
+=================================*/
+
+.topPage .faq {
+  padding-top: 164px;
+}
+
+.topPage .faq .sectionTitle {
+  margin: auto;
+}
+
+.topPage .faq .sectionSubTitle {
+  text-align: center;
+  font-size: 13px;
+}
+
+.topPage .faq .contactLink {
+  color: #00a99d;
+}
+
+.topPage .faq .faqItem + .faqItem{
+  margin-top: 33px;
+}
+
+.topPage .faq .question {
+  display: flex;
+}
+
+.topPage .faq .mark {
+  width: 15px;
+  min-width: 15px;
+}
+
+.topPage .faq .question .text {
+  margin-left: 8px;
+  border: 0;
+  border-left: 1px solid;
+  border-color: #222;
+  padding: 4px 0 4px 22px;
+  font-size: 13px;
+}
+
+.topPage .faq .answer {
+  display: flex;
+  margin-top: 8px;
+}
+
+.topPage .faq .answer .text {
+  margin-left: 8px;
+  border: 0;
+  border-left: 1px solid;
+  border-image: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+  border-image-slice: 1;
+  padding: 4px 0 4px 22px;
+  font-size: 13px;
+}
 
 
 
+
+@media only screen and (max-width: 1280px) and (min-width: 1141px) {
+
+/*================================
+	main
+=================================*/
+
+  main {
+    zoom: 80%;
+  }
+}
 
 @media only screen and (min-width: 421px) {
 
@@ -950,5 +1018,31 @@ header .copyright {
 
   .topPage .case .caseCard {
     width: 508px;
+  }
+
+/*================================
+	faq
+=================================*/
+
+  .topPage .faq .inner {
+    width: 780px;
+    margin: auto;
+  }
+
+  .topPage .faq .sectionTitle {
+    width: 73px;
+  }
+
+  .topPage .faq .sectionSubTitle {
+    margin-top: 32px;
+  }
+
+  .topPage .faq .faqList {
+    width: 780px;
+    margin: 65px auto 0;
+  }
+
+  .topPage .faq .viewMore {
+    margin-top: 24px;
   }
 }
