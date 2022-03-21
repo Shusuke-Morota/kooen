@@ -30,6 +30,10 @@ a {
   background-color: #fbfbfb;
 }
 
+/*================================
+	view more anchor
+=================================*/
+
 .serviceAnchor {
   margin-left: auto;
   width: 118px;
@@ -519,7 +523,210 @@ header .copyright {
   font-size: 13px;
 }
 
+/*================================
+	package
+=================================*/
 
+.topPage .package {
+  background-color: #fff;
+}
+
+.topPage .package .sectionTitle {
+  margin: auto;
+}
+
+.topPage .package .sectionSubTitle {
+  text-align: center;
+}
+
+.topPage .package .slidesContainer {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+}
+
+.topPage .package .slides {
+  display: flex;
+}
+
+.topPage .package .slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  /* width: 100%; */
+  height: 100%;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.topPage .package .slide.minimum {
+  background-color: #01d480;
+}
+
+.topPage .package .slide.standard {
+  background-color: #01bf8e;
+}
+
+.topPage .package .slide.premium {
+  background-color: #01aa9d;
+}
+
+.topPage .package .slideHeading {
+  text-align: center;
+}
+
+.topPage .package .slideTitle {
+  margin: auto;
+}
+
+.topPage .package .slideSubTitle {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.topPage .package .slideBody {
+  margin: 31px auto 0;
+  background-color: #fff;
+}
+
+.topPage .package .packageItem {
+  position: relative;
+  padding-left: 15px;
+}
+
+.topPage .package .packageItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #c4c4c4;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.topPage .package .supportTitle {
+  width: 67px;
+  margin: auto;
+}
+
+.topPage .package .supportList {
+  width: 182px;
+  margin: 12px auto 0;
+}
+
+.topPage .package .slides>li + li {
+  margin-left: 21px;
+}
+
+.topPage .package .topSupportItem, .middleSupportItem, .bottomSupportItem {
+  padding-left: 30px;
+}
+
+.topPage .package
+.topSupportItem,
+.middleSupportItem,
+.bottomSupportItem {
+  position: relative;
+  font-size: 13px;
+}
+
+.topPage .package .disable {
+  color: #ccc;
+}
+
+.topPage .package .minimum .topSupportItem::before {
+  width: 25px;
+  height: 12px;
+  background-image: url(../img/home/package_shortLogo-01.svg);
+}
+
+.topPage .package .minimum .middleSupportItem::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/home/package_shortLogo-02_disable.svg);
+}
+
+.topPage .package .minimum .bottomSupportItem::before {
+  width: 12px;
+  height: 17px;
+  left: 4px;
+  background-image: url(../img/home/package_shortLogo-03_disable.svg);
+}
+
+.topPage .package .standard .topSupportItem::before {
+  width: 25px;
+  height: 12px;
+  background-image: url(../img/home/package_shortLogo-01.svg);
+}
+
+.topPage .package .standard .middleSupportItem::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/home/package_shortLogo-02.svg);
+}
+
+.topPage .package .standard .bottomSupportItem::before {
+  width: 12px;
+  height: 17px;
+  left: 4px;
+  background-image: url(../img/home/package_shortLogo-03_disable.svg);
+}
+
+.topPage .package .premium .topSupportItem::before {
+  width: 25px;
+  height: 12px;
+  background-image: url(../img/home/package_shortLogo-01.svg);
+}
+
+.topPage .package .premium .middleSupportItem::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/home/package_shortLogo-02.svg);
+}
+
+.topPage .package .premium .bottomSupportItem::before {
+  width: 12px;
+  height: 17px;
+  left: 4px;
+  background-image: url(../img/home/package_shortLogo-03.svg);
+}
+
+.topPage .package
+.topSupportItem::before,
+.middleSupportItem::before,
+.bottomSupportItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+}
+
+.topPage .package .feeArea {
+  border-top: 1px solid #ccc;
+  padding-top: 17px;
+}
+
+.topPage .package .fee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 @media only screen and (max-width: 1280px) and (min-width: 1141px) {
@@ -1044,5 +1251,49 @@ header .copyright {
 
   .topPage .faq .viewMore {
     margin-top: 24px;
+  }
+
+/*================================
+	package
+=================================*/
+
+  .topPage .package {
+    margin-top: 180px;
+    padding-top: 160px;
+  }
+
+  .topPage .package .sectionTitle {
+    width: 151px;
+  }
+
+  .topPage .package .slides {
+    width: 1140px;
+    margin: 54px auto 0;
+  }
+
+  .topPage .package .slide.minimum, .slide.standard, .slide.premium {
+    padding: 32px 24px;
+    width: 366px;
+  }
+
+  .topPage .package .slideTitle {
+    width: 126px;
+  }
+
+  .topPage .package .slideBody {
+    width: 318px;
+    padding: 24px 29px;
+  }
+
+  .topPage .package .packageList {
+    min-height: 110px;
+  }
+
+  .topPage .package .feeArea {
+    margin-top: 35px;
+  }
+
+  .topPage .package .minimumPrice {
+    width: 248px;
   }
 }

@@ -346,10 +346,10 @@
     <section class="faq">
       <div class="inner">
         <div class="sectionHeading">
-          <h2 class="sectionTitle">
+          <h2 class="sectionTitle js-animate fadeUp is-show">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/qanda.svg" alt="Q&A">
           </h2>
-          <p class="sectionSubTitle">
+          <p class="sectionSubTitle js-animate fadeUp is-show">
             KOOENがご提供するサービスについてのQ&Aです。<br>
             記載のない内容ついては<a href="#" class="contactLink">メールフォーム</a>からお気軽にご相談ください。
           </p>
@@ -419,6 +419,138 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/arrow_anchor.svg">
             </span>
           </a>
+        </div>
+      </div>
+    </section>
+    <section class="package">
+      <div class="inner">
+        <div class="sectionHeading">
+          <h2 class="sectionTitle js-animate fadeUp is-show">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_headline.svg" alt="package">
+          </h2>
+          <p class="sectionSubTitle js-animate fadeUp is-show">
+            MILLのご契約に加え、お客様のプランにあったパッケージをお選びください。<br>
+            <br>
+            契約企業様内に1名以上の管理担当の社員様がおり、そのサポートを行うイメージです。<br>
+            小規模企業であれば社長様がその役割を担っていただいても問題ございません。<br>
+          </p>
+        </div>
+        <div class="slider js-animate fadeUp is-show">
+          <div class="slidesContainer">
+            <ul class="slides">
+              <li class="slide minimum">
+                <div class="slideHeading">
+                  <h3 class="slideTitle">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_minimum.svg" alt="MINIMUM">
+                  </h3>
+                  <div class="slideSubTitle">MILLパッケージ</div>
+                </div>
+                <div class="slideBody">
+                  <ul class="packageList">
+                    <li class="packageItem">MILL月額費用＋運用サポート</li>
+                  </ul>
+                  <div class="supports">
+                    <h4 class="supportTitle">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_supportHeadline.svg" alt="support">
+                    </h4>
+                    <ul class="supportList">
+                      <li class="topSupportItem">
+                        MILL運用サポート
+                      </li>
+                      <li class="middleSupportItem disable">
+                        人事労務・採用サポート
+                      </li>
+                      <li class="bottomSupportItem disable">
+                        経理サポート
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="feeArea">
+                    <p class="fee">
+                      <span class="minimumPrice">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_price-30000.svg" alt="30000">
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="slide standard">
+                <div class="slideHeading">
+                  <h3 class="slideTitle">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_standard.svg" alt="STANDARD">
+                  </h3>
+                  <div class="slideSubTitle">経理パッケージ</div>
+                </div>
+                <div class="slideBody">
+                  <ul class="packageList">
+                    <li class="packageItem">MILL月額費用＋運用サポート</li>
+                    <li class="packageItem">経理業務のサポート</li>
+                  </ul>
+                  <div class="supports">
+                    <h4 class="supportTitle">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_supportHeadline.svg" alt="support">
+                    </h4>
+                    <ul class="supportList">
+                      <li class="topSupportItem">
+                        MILL運用サポート
+                      </li>
+                      <li class="middleSupportItem">
+                        人事労務・採用サポート
+                      </li>
+                      <li class="bottomSupportItem disable">
+                        経理サポート
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="feeArea">
+                    <p class="fee">
+                      <span class="minimumPrice">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_price-150000.svg" alt="150000">
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="slide premium">
+                <div class="slideHeading">
+                  <h3 class="slideTitle">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_premium.svg" alt="PREMIUM">
+                  </h3>
+                  <div class="slideSubTitle">アドミニストレーション フルパッケージ</div>
+                </div>
+                <div class="slideBody">
+                  <ul class="packageList">
+                    <li class="packageItem">MILL月額費用＋運用サポート</li>
+                    <li class="packageItem">経理業務のサポート</li>
+                    <li class="packageItem">人事労務／採用人事のサポート</li>
+                  </ul>
+                  <div class="supports">
+                    <h4 class="supportTitle">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_supportHeadline.svg" alt="support">
+                    </h4>
+                    <ul class="supportList">
+                      <li class="topSupportItem">
+                        MILL運用サポート
+                      </li>
+                      <li class="middleSupportItem">
+                        人事労務・採用サポート
+                      </li>
+                      <li class="bottomSupportItem">
+                        経理サポート
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="feeArea">
+                    <p class="fee">
+                      <span class="minimumPrice">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/package_price-250000.svg" alt="250000">
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
