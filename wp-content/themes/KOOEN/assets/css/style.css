@@ -777,6 +777,36 @@ header .copyright {
   font-size: 13px;
 }
 
+/*================================
+	contact
+=================================*/
+
+.topPage .contact {
+  width: 100%;
+  background: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+  color: #fff;
+}
+
+.topPage .contact .inner {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.topPage .contact .arrowWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.topPage .contact .contactAnchor {
+  width: 241px;
+  padding-top: 15px;
+}
+
+.topPage .contact .anchorArrow {
+  position: absolute;
+  bottom: -20px;
+}
+
 
 @media only screen and (max-width: 1280px) and (min-width: 1141px) {
 
@@ -1298,7 +1328,7 @@ header .copyright {
     margin: 65px auto 0;
   }
 
-  .topPage .faq .viewMore {
+  .topPage .faq .arrowWrapper {
     margin-top: 24px;
   }
 
@@ -1398,4 +1428,40 @@ header .copyright {
     align-items: center;
     margin-left: 40px;
   }
+
+/*================================
+	contact
+=================================*/
+
+  .topPage .contact {
+    padding: 207px 0 170px;
+    margin-top: -141px;
+  }
+
+  .topPage .contact .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topPage .contact .sectionTitle {
+    width: 144px;
+    height: auto;
+  }
+
+  .topPage .contact .sectionSubTitle {
+    margin-top: 18px;
+  }
+
+  .topPage .contact .contactText {
+    height: 30px;
+  }
+
+  /* .topPage .contact .arrowWrapper {
+    width: 241px;
+    max-height: 70px;
+  }
+
+  .topPage .contact .contactAnchor {
+    width: 241px;
+  } */
 }

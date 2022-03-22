@@ -131,7 +131,7 @@
                   </p>
                 </div>
               </div>
-              <div class="viewMore">
+              <div class="arrowWrapper">
                 <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="serviceAnchor anchorPosition">
                   <span class="anchorText">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/view_More.svg" alt="View More">
@@ -410,7 +410,7 @@
             </div>
           </li>
         </ul>
-        <div class="viewMore">
+        <div class="arrowWrapper">
           <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="serviceAnchor anchorPosition">
             <span class="anchorText">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/view_More.svg" alt="View More">
@@ -574,7 +574,7 @@
                     ご郵送の際の宛先やお電話でのご連絡の際はこちらの情報をご確認ください。
                   </p>
                 </div>
-                <div class="viewMore">
+                <div class="arrowWrapper">
                   <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="serviceAnchor anchorPosition">
                     <span class="anchorText">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/view_More.svg" alt="View More">
@@ -603,7 +603,7 @@
                     ご郵送の際の宛先やお電話でのご連絡の際はこちらの情報をご確認ください。
                   </p>
                 </div>
-                <div class="viewMore">
+                <div class="arrowWrapper">
                   <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="serviceAnchor anchorPosition">
                     <span class="anchorText">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/view_More.svg" alt="View More">
@@ -617,6 +617,31 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="inner js-animate fadeUp is-show">
+        <div class="sectionHeading">
+          <h2 class="sectionTitle">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/contact_headline.svg" alt="contact">
+          </h2>
+          <p class="sectionSubTitle">
+            MILLや経理代行のご相談、採用などお気軽にお問い合わせください。
+          </p>
+        </div>
+        <div class="arrowWrapper">
+          <a href="https://mi-ll.com/" target="_blank" rel="noopener noreferrer" class="contactAnchor anchorPosition">
+            <span class="anchorText contactText">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/contact_mail_form.svg" alt="View More">
+            </span>
+            <span class="anchorArrow contactAnchor">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/contact_arrow.svg">
+          </span>
+          </a>
+        </div>
+        <!-- <div class="arrowWrapper">
+          <a href="#" class=""></a>
+        </div> -->
       </div>
     </section>
   </div>
