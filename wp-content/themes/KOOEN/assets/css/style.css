@@ -807,6 +807,16 @@ header .copyright {
   bottom: -20px;
 }
 
+/*================================
+	footer
+=================================*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1b1b;
+}
 
 @media only screen and (max-width: 1280px) and (min-width: 1141px) {
 
@@ -815,6 +825,17 @@ header .copyright {
 =================================*/
 
   main {
+    zoom: 80%;
+  }
+}
+
+@media only screen and (min-width: 1141px) {
+
+/*================================
+	footer
+=================================*/
+
+  footer {
     zoom: 80%;
   }
 }
@@ -1456,12 +1477,15 @@ header .copyright {
     height: 30px;
   }
 
-  /* .topPage .contact .arrowWrapper {
-    width: 241px;
-    max-height: 70px;
+/*================================
+	footer
+=================================*/
+
+  footer {
+    height: 81px;
   }
 
-  .topPage .contact .contactAnchor {
-    width: 241px;
-  } */
+  footer .logo {
+    width: 110px;
+  }
 }

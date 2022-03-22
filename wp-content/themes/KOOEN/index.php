@@ -639,10 +639,8 @@
           </span>
           </a>
         </div>
-        <!-- <div class="arrowWrapper">
-          <a href="#" class=""></a>
-        </div> -->
       </div>
     </section>
   </div>
 </main>
+<?php get_footer(); ?>
