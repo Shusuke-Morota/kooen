@@ -1,0 +1,1491 @@
+/*===================
+        base
+===================*/
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #656565;
+  line-height: 1.8;
+  font-size: 14px;
+  font-family: Noto Sans JP,sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+}
+
+/*===================
+        global
+===================*/
+
+.topPage {
+  background-color: #fbfbfb;
+}
+
+/*================================
+	common line
+=================================*/
+
+/* .commonLine {
+  width: 1px;
+  margin-left: 8px;
+  background-color: #222;
+} */
+
+/*================================
+	view more anchor
+=================================*/
+
+.serviceAnchor {
+  margin-left: auto;
+  width: 118px;
+}
+
+.anchorPosition {
+  position: relative;
+  display: flex;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.anchorPosition:hover {
+  filter: hue-rotate(45deg);
+}
+
+.anchorText {
+  display: flex;
+  align-items: center;
+  height: 43px;
+}
+
+.anchorArrow {
+  position: absolute;
+  bottom: 5px;
+}
+
+/*================================
+	header
+=================================*/
+
+header .headerContents {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+}
+
+header .navigationWrapper {
+  position: fixed;
+  background-color: #202020;
+}
+
+header .logo {
+  position: absolute;
+  line-height: 1;
+}
+
+header .drawer {
+  position: absolute;
+}
+
+header .toggle {
+  position: absolute;
+}
+
+header .bar {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  transition: ease 0.3s;
+}
+
+header .active .bar:first-child {
+  transform: rotate(45deg)
+}
+
+header .active .bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+header .active .bar:last-child {
+  transform: rotate(-45deg)
+}
+
+header .hiddenNavigation {
+  position: absolute;
+  height: 100vh;
+  text-align: left;
+  background-color: #202020;
+  background-image: url(../img/common/headerLogo.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+header .service {
+  padding-bottom: 41px;
+}
+
+header .serviceLogo {
+  width: 70px;
+  height: 20px;
+}
+
+header .copyright {
+  width: 170px;
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+/*================================
+	topPage
+=================================*/
+
+/*================================
+	first view
+=================================*/
+
+.topPage .firstView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+}
+
+.topPage .firstView .inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topPage .logoVideo {
+  mix-blend-mode: multiply;
+}
+
+/*================================
+	statement section
+=================================*/
+
+.topPage .statement .inner {
+  margin: auto;
+}
+
+.topPage .statement .block {
+  display: flex;
+}
+
+.topPage .statement .block + .block {
+  margin-top: 50px;
+}
+
+.topPage .statement .statementLine, .statementLineColor {
+  width: 1px;
+  margin-left: 8px;
+  background-color: tomato;
+}
+
+.topPage .statement .label {
+  display: flex;
+}
+
+.topPage .statement .text {
+  margin-top: 32px;
+  font-size: 13px;
+}
+
+.topPage .text span {
+  display: block;
+  margin-top: 8px;
+}
+
+.topPage .statement .originLine, .originLineColor {
+  width: 1px;
+  margin-left: 8px;
+  background-color: #222;
+}
+
+.topPage .statement .originList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.topPage .statement .originItem {
+  width: 100%;
+}
+
+/*================================
+	topLogo
+=================================*/
+
+.topPage .topLogo .inner {
+  padding-top: 163px;
+}
+
+.topPage .topLogo .bcgLogo {
+  margin: 0 auto;
+  opacity: 0.4;
+  -webkit-mask-image: url(../img/home/logo_logo.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-animation: cyclicBcgColor 8s ease infinite;
+  background-image: url(../img/home/logo_logo.svg);
+  background-position: center;
+  background: linear-gradient(45deg,#008856,#00a99d,#79d400);
+  background-size: 300% 300%;
+  animation: cyclicBcgColor 8s ease infinite;
+}
+
+@keyframes cyclicBcgColor {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/*================================
+	consulting
+=================================*/
+
+.topPage .consulting .sectionHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topPage .consulting .sectionSubTitle {
+  text-align: center;
+}
+
+.topPage .consulting .consultingImage {
+  margin: auto;
+}
+
+/*================================
+	services
+=================================*/
+
+.topPage .services .card {
+  margin-left: auto;
+  background-color: #fcfcfc;
+  box-shadow: 0 0 40px rgb(0 0 0 / 5%);
+}
+
+.topPage .services .sectionSubTitle {
+  font-size: 13px;
+}
+
+.topPage .services .serviceContent {
+  border-left: 1px solid;
+  border-image: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+  border-image-slice: 1;
+}
+
+.topPage .services .serviceHeading {
+  font-family: "Noto Serif JP",serif;
+  line-height: 1.4;
+  color: #222;
+}
+
+.topPage .services .serviceOperation {
+  font-size: 13px;
+  margin-top: 16px;
+}
+
+.topPage .services .serviceLogo {
+  width: 200px;
+}
+
+.topPage .services .serviceCatchphrase {
+  font-weight: 700;
+}
+
+.topPage .services .agencyWork {
+  margin-top: 24px;
+}
+
+.topPage .services .serviceExample {
+  line-height: 1;
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+}
+
+.topPage .services .serviceList {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-top: 20px;
+}
+
+.topPage .services .serviceItem {
+  position: relative;
+  padding-left: 15px;
+  line-height: 1;
+}
+
+.topPage .services .serviceItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #c4c4c4;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*================================
+	what we do
+=================================*/
+
+.topPage .what .sectionTitle {
+  width: 217px;
+}
+
+.topPage .what .supportedList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topPage .what .sectionSubTitle {
+  width: 286px;
+}
+
+/*================================
+	case study
+=================================*/
+
+.topPage .case .sectionTitle {
+  margin: auto;
+}
+
+.topPage .case .sectionSubTitle {
+  text-align: center;
+}
+
+.topPage .case .block {
+  display: flex;
+  justify-content: center;
+}
+
+.topPage .case .label {
+  display: flex;
+}
+
+.topPage .case .caseLine {
+  width: 1px;
+  margin-left: 8px;
+  background: #222;
+}
+
+.topPage .case .secondaryHeading {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Serif JP",serif;
+}
+
+.topPage .case .labelColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 20px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.topPage .case .issue {
+  background-color: #b3b3b3;
+}
+
+.topPage .case .issueText {
+  margin-left: 8px;
+}
+
+.topPage .case .caseList {
+  font-size: 13px;
+}
+
+.topPage .case .caseItem {
+  position: relative;
+  padding-left: 15px;
+}
+
+.topPage .case .caseItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #c4c4c4;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.topPage .case .caseCard {
+  border-left: 1px solid;
+  border-image: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+  border-image-slice: 1;
+  margin-top: 24px;
+  padding: 20px 24px;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 5%);
+}
+
+.topPage .case .solution {
+  background: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+}
+
+.topPage .case .caseText {
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+/*================================
+	faq
+=================================*/
+
+.topPage .faq {
+  padding-top: 164px;
+}
+
+.topPage .faq .sectionTitle {
+  margin: auto;
+}
+
+.topPage .faq .sectionSubTitle {
+  text-align: center;
+  font-size: 13px;
+}
+
+.topPage .faq .contactLink {
+  color: #00a99d;
+}
+
+.topPage .faq .faqItem + .faqItem{
+  margin-top: 33px;
+}
+
+.topPage .faq .question {
+  display: flex;
+}
+
+.topPage .faq .mark {
+  width: 15px;
+  min-width: 15px;
+}
+
+.topPage .faq .question .text {
+  margin-left: 8px;
+  border: 0;
+  border-left: 1px solid;
+  border-color: #222;
+  padding: 4px 0 4px 22px;
+  font-size: 13px;
+}
+
+.topPage .faq .answer {
+  display: flex;
+  margin-top: 8px;
+}
+
+.topPage .faq .answer .text {
+  margin-left: 8px;
+  border: 0;
+  border-left: 1px solid;
+  border-image: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+  border-image-slice: 1;
+  padding: 4px 0 4px 22px;
+  font-size: 13px;
+}
+
+/*================================
+	package
+=================================*/
+
+.topPage .package {
+  background-color: #fff;
+}
+
+.topPage .package .sectionTitle {
+  margin: auto;
+}
+
+.topPage .package .sectionSubTitle {
+  text-align: center;
+}
+
+.topPage .package .slidesContainer {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+}
+
+.topPage .package .slides {
+  display: flex;
+}
+
+.topPage .package .slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  /* width: 100%; */
+  height: 100%;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.topPage .package .slide.minimum {
+  background-color: #01d480;
+}
+
+.topPage .package .slide.standard {
+  background-color: #01bf8e;
+}
+
+.topPage .package .slide.premium {
+  background-color: #01aa9d;
+}
+
+.topPage .package .slideHeading {
+  text-align: center;
+}
+
+.topPage .package .slideTitle {
+  margin: auto;
+}
+
+.topPage .package .slideSubTitle {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.topPage .package .slideBody {
+  margin: 31px auto 0;
+  background-color: #fff;
+}
+
+.topPage .package .packageItem {
+  position: relative;
+  padding-left: 15px;
+}
+
+.topPage .package .packageItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #c4c4c4;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.topPage .package .supportTitle {
+  width: 67px;
+  margin: auto;
+}
+
+.topPage .package .supportList {
+  width: 182px;
+  margin: 12px auto 0;
+}
+
+.topPage .package .slides>li + li {
+  margin-left: 21px;
+}
+
+.topPage .package .topSupportItem, .middleSupportItem, .bottomSupportItem {
+  padding-left: 30px;
+}
+
+.topPage .package
+.topSupportItem,
+.middleSupportItem,
+.bottomSupportItem {
+  position: relative;
+  font-size: 13px;
+}
+
+.topPage .package .disable {
+  color: #ccc;
+}
+
+.topPage .package .minimum .topSupportItem::before {
+  width: 25px;
+  height: 12px;
+  background-image: url(../img/home/package_shortLogo-01.svg);
+}
+
+.topPage .package .minimum .middleSupportItem::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/home/package_shortLogo-02_disable.svg);
+}
+
+.topPage .package .minimum .bottomSupportItem::before {
+  width: 12px;
+  height: 17px;
+  left: 4px;
+  background-image: url(../img/home/package_shortLogo-03_disable.svg);
+}
+
+.topPage .package .standard .topSupportItem::before {
+  width: 25px;
+  height: 12px;
+  background-image: url(../img/home/package_shortLogo-01.svg);
+}
+
+.topPage .package .standard .middleSupportItem::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/home/package_shortLogo-02.svg);
+}
+
+.topPage .package .standard .bottomSupportItem::before {
+  width: 12px;
+  height: 17px;
+  left: 4px;
+  background-image: url(../img/home/package_shortLogo-03_disable.svg);
+}
+
+.topPage .package .premium .topSupportItem::before {
+  width: 25px;
+  height: 12px;
+  background-image: url(../img/home/package_shortLogo-01.svg);
+}
+
+.topPage .package .premium .middleSupportItem::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/home/package_shortLogo-02.svg);
+}
+
+.topPage .package .premium .bottomSupportItem::before {
+  width: 12px;
+  height: 17px;
+  left: 4px;
+  background-image: url(../img/home/package_shortLogo-03.svg);
+}
+
+.topPage .package
+.topSupportItem::before,
+.middleSupportItem::before,
+.bottomSupportItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+}
+
+.topPage .package .feeArea {
+  border-top: 1px solid #ccc;
+  padding-top: 17px;
+}
+
+.topPage .package .fee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topPage .package .attentionWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.topPage .package .attention {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topPage .package .card {
+  position: relative;
+  display: flex;
+  display: -webkit-box;
+  background: #fcfcfc;
+  -webkit-box-shadow: 0 0 40px rgb(0 0 0 / 8%);
+  box-shadow: 0 0 40px rgb(0 0 0 / 8%);
+  font-size: 13px;
+}
+
+.topPage .package .card + .card {
+  margin-top: 70px;
+}
+
+.topPage .package .label {
+  display: flex;
+}
+
+.topPage .package .packageLine {
+  width: 1px;
+  margin-left: 8px;
+  background-color: #222;
+}
+
+.topPage .package .guideText {
+  font-size: 13px;
+}
+
+/*================================
+	contact
+=================================*/
+
+.topPage .contact {
+  width: 100%;
+  background: linear-gradient(90deg,#00a99d,#00a99d 0,#00d47f 99.97%,#00d47f 100.01%);
+  color: #fff;
+}
+
+.topPage .contact .inner {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.topPage .contact .arrowWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.topPage .contact .contactAnchor {
+  width: 241px;
+  padding-top: 15px;
+}
+
+.topPage .contact .anchorArrow {
+  position: absolute;
+  bottom: -20px;
+}
+
+/*================================
+	footer
+=================================*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1b1b;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1141px) {
+
+/*================================
+	main
+=================================*/
+
+  main {
+    zoom: 80%;
+  }
+}
+
+@media only screen and (min-width: 1141px) {
+
+/*================================
+	footer
+=================================*/
+
+  footer {
+    zoom: 80%;
+  }
+}
+
+@media only screen and (min-width: 421px) {
+
+  .sectionSubTitle {
+    margin-top: 32px;
+  }
+
+/*================================
+	header
+=================================*/
+
+  header .headerContents {
+    right: 0;
+    height: 100vh;
+  }
+
+  header .navigationWrapper {
+    overflow: hidden;
+    right: -278px;
+    width: 358px;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  header .pcOpen {
+    width: 380px;
+    right: -30px;
+    transition-duration: 0.5s;
+  }
+
+  header .visibilityNavigation {
+    width: 80px;
+    height: 100%;
+  }
+
+  header .logo {
+    top: 30px;
+    left: 17px;
+    width: 46px;
+  }
+
+  header .hide {
+    display: none;
+  }
+
+  header .drawer {
+    top: 50%;
+    left: 20%;
+    margin-top: -40px;
+    margin-left: -40px;
+  }
+
+  header .toggle {
+    width: 17px;
+    height: 43px;
+  }
+
+  header .bar:first-child {
+    left: 0;
+  }
+
+  header .bar:nth-of-type(2) {
+    left: 50%;
+  }
+
+  header .bar:last-child {
+    left: 100%;
+  }
+
+  header .active .bar:first-child {
+    left: 50%;
+  }
+
+  header .active .bar:last-child {
+    left: 50%;
+  }
+
+  header .hiddenNavigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    top: 0;
+    left: 127px;
+    width: 252px;
+    padding-left: 20px;
+  }
+
+  header .list {
+    margin-top: 46px;
+  }
+
+  header .item + .item {
+    margin-top: 30px;
+  }
+
+  header .itemImage {
+    display: inline-block;
+    height: 25px;
+  }
+
+/*================================
+	first view
+=================================*/
+
+  .topPage .firstView {
+    width: 641px;
+  }
+
+  .topPage .firstView .logoVideo {
+    width: 684px;
+  }
+
+  .topPage .firstView .arrows {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+  }
+
+  .topPage .firstView .topArrowAnimation {
+    animation-name: topChangeColor;
+    animation: topChangeColor 2s steps(6,start) 1s infinite;
+  }
+
+  @keyframes topChangeColor {
+    0% {
+      stroke-opacity: 0;
+    }
+
+    11% {
+      stroke-opacity: 0;
+    }
+
+    22% {
+      stroke-opacity: 0;
+    }
+
+    33% {
+      stroke: #01d480;
+      stroke-opacity: .1;
+    }
+
+    44% {
+      stroke: #01c18d;
+      stroke-opacity: .3;
+    }
+
+    55% {
+      stroke: #01ab9d;
+    }
+
+    66% {
+      stroke: #01c18d;
+      stroke-opacity: .5;
+    }
+
+    77% {
+      stroke: #01d480;
+      stroke-opacity: .2;
+    }
+
+    88% {
+      stroke-opacity: 0;
+    }
+
+    100% {
+      stroke-opacity: 0;
+    }
+  }
+
+  .topPage .firstView .middleArrowAnimation {
+    animation-name: middleChangeColor;
+    animation: middleChangeColor 2s steps(6,start) 1s infinite;
+  }
+
+  @keyframes middleChangeColor {
+    0% {
+      stroke-opacity: 0;
+    }
+
+    11% {
+      stroke-opacity: 0;
+    }
+
+    22% {
+      stroke-opacity: 0;
+    }
+
+    33% {
+      stroke-opacity: 0;
+    }
+
+    44% {
+      stroke: #01d480;
+      stroke-opacity: .1;
+    }
+
+    55% {
+      stroke: #01c18d;
+      stroke-opacity: .3;
+    }
+
+    66% {
+      stroke: #01ab9d;
+    }
+
+    77% {
+      stroke: #01c18d;
+      stroke-opacity: .5;
+    }
+
+    88% {
+      stroke: #01d480;
+      stroke-opacity: .2;
+    }
+
+    100% {
+      stroke-opacity: 0;
+    }
+  }
+
+  .topPage .firstView .bottomArrowAnimation {
+    animation-name: bottomChangeColor;
+    animation: bottomChangeColor 2s steps(6,start) 1s infinite;
+  }
+
+  @keyframes bottomChangeColor {
+    0% {
+      stroke-opacity: 0;
+    }
+
+    11% {
+      stroke-opacity: 0;
+    }
+
+    22% {
+      stroke-opacity: 0;
+    }
+
+    33% {
+      stroke-opacity: 0;
+    }
+
+    44% {
+      stroke-opacity: 0;
+    }
+
+    55% {
+      stroke: #01d480;
+      stroke-opacity: .1;
+    }
+
+    66% {
+      stroke: #01c18d;
+      stroke-opacity: .3;
+    }
+
+    77% {
+      stroke: #01ab9d;
+    }
+
+    88% {
+      stroke: #01c18d;
+      stroke-opacity: .5;
+    }
+
+    100% {
+      stroke: #01d480;
+      stroke-opacity: .2;
+    }
+  }
+
+/*================================
+	statement
+=================================*/
+
+  .topPage .statement .inner {
+    max-width: 1140px;
+    padding-left: 477px;
+  }
+
+  .topPage .statement .blockTitle {
+    width: auto;
+  }
+
+  .topPage .statement .statementLine {
+    min-height: 490px;
+  }
+
+  .topPage .statement .contents {
+    width: 552px;
+    margin-left: 40px;
+  }
+
+  .topPage .statement .spDisplay {
+    display: none;
+  }
+
+  .topPage .statement .originLine {
+    min-height: 490px;
+  }
+
+  .topPage .statement .originList {
+    width: 391px;
+  }
+
+  .topPage .statement .originItem:first-of-type {
+    max-width: 353px;
+  }
+
+  .topPage .statement .originItem:nth-of-type(3) {
+    max-width: 334px;
+  }
+
+  .topPage .statement .originItem:nth-of-type(4) {
+    max-width: 353px;
+  }
+
+/*================================
+	topLogo
+=================================*/
+
+  .topPage .topLogo .bcgLogo {
+    width: 1120px;
+    height: 258px;
+  }
+
+/*================================
+	consulting
+=================================*/
+
+  .topPage .consulting {
+    padding-top: 182px;
+  }
+
+  .topPage .consulting .sectionTitle {
+    width: 212px;
+  }
+
+  .topPage .consulting .consultingImage {
+    margin-top: 79px;
+    width: 780px;
+  }
+
+  .topPage .consulting .spConsultingFrow {
+    display: none;
+  }
+
+/*================================
+	service
+=================================*/
+
+  .topPage .services .inner {
+    padding: 154px 224px 0 0;
+  }
+
+  .topPage .services .card {
+    width: 840px;
+    padding: 108px 80px;
+  }
+
+  .topPage .services .sectionTitle {
+    width: 155px;
+  }
+
+  .topPage .services .cardBody {
+    margin-top: 64px;
+  }
+
+  .topPage .services .serviceContent {
+    padding: 20px 0 20px 30px
+  }
+
+  .topPage .services .serviceContent {
+    margin-top: 64px;
+  }
+
+  .topPage .services .serviceHeading {
+    font-size: 24px;
+  }
+
+  .topPage .services .serviceDescriptionArea {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .topPage .services .serviceLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topPage .services .serviceDescription {
+    flex: 1;
+    margin-left: 24px;
+  }
+
+  .topPage .services .serviceViewMore {
+    margin-top: 16px;
+  }
+
+/*================================
+	what we do
+=================================*/
+
+  .topPage .what {
+    padding-top: 160px;
+  }
+
+  .topPage .what .inner {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .topPage .what .supportedList {
+    max-width: 768px;
+    width: 100%;
+    margin-left: 47px;
+  }
+
+  .topPage .what .supportedItem {
+    width: 256px;
+  }
+
+/*================================
+	case study
+=================================*/
+
+  .topPage .case {
+    padding-top: 180px;
+  }
+
+  .topPage .case .sectionTitle {
+    width: 196px;
+  }
+
+  .topPage .case .cases {
+    margin-top: 64px;
+  }
+
+  .topPage .case .block + .block {
+    margin-top: 97px;
+  }
+
+  .topPage .case .caseLine {
+    min-height: 314px;
+  }
+
+  .topPage .case .caseDetails {
+    display: flex;
+    margin-left: 24px;
+  }
+
+  .topPage .case .caseImage {
+    width: 185px;
+    padding-left: 16px;
+  }
+
+  .topPage .case .caseContent {
+    width: 513px;
+    margin-left: 32px;
+  }
+
+  .topPage .case .secondaryHeading {
+    font-size: 18px;
+  }
+
+  .topPage .case .caseImage.pcNone {
+    display: none;
+  }
+
+  .topPage .case .caseList {
+    margin-top: 8px;
+  }
+
+  .topPage .case .caseItem {
+    top: 12px;
+  }
+
+  .topPage .case .caseItem::before {
+    top: 12px;
+  }
+
+  .topPage .case .caseCard {
+    width: 508px;
+  }
+
+/*================================
+	faq
+=================================*/
+
+  .topPage .faq .inner {
+    width: 780px;
+    margin: auto;
+  }
+
+  .topPage .faq .sectionTitle {
+    width: 73px;
+  }
+
+  .topPage .faq .sectionSubTitle {
+    margin-top: 32px;
+  }
+
+  .topPage .faq .faqList {
+    width: 780px;
+    margin: 65px auto 0;
+  }
+
+  .topPage .faq .arrowWrapper {
+    margin-top: 24px;
+  }
+
+/*================================
+	package
+=================================*/
+
+  .topPage .package {
+    margin-top: 180px;
+    padding-top: 160px;
+  }
+
+  .topPage .package .sectionTitle {
+    width: 151px;
+  }
+
+  .topPage .package .slides {
+    width: 1140px;
+    margin: 54px auto 0;
+  }
+
+  .topPage .package .slide.minimum, .slide.standard, .slide.premium {
+    padding: 32px 24px;
+    width: 366px;
+  }
+
+  .topPage .package .slideTitle {
+    width: 126px;
+  }
+
+  .topPage .package .slideBody {
+    width: 318px;
+    padding: 24px 29px;
+  }
+
+  .topPage .package .packageList {
+    min-height: 110px;
+  }
+
+  .topPage .package .feeArea {
+    margin-top: 35px;
+  }
+
+  .topPage .package .minimumPrice {
+    width: 248px;
+  }
+
+  .topPage .package .attentionWrapper {
+    font-size: 12px;
+  }
+
+  .topPage .package .attention {
+    width: 1120px;
+  }
+
+  .topPage .package .introduction {
+    background-image: url(../img/home/package_bg.svg);
+    background-repeat: no-repeat;
+    background-position: 80px 0;
+    padding-top: 90px;
+  }
+
+  .topPage .package .introductionInner {
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .topPage .package .card {
+    padding: 82px 80px;
+    width: 840px;
+    margin-left: auto;
+  }
+
+  .topPage .package .packageLine {
+    min-height: 173px;
+  }
+
+  .topPage .package .cardBody {
+    margin-left: 40px;
+    position: relative;
+  }
+
+  .topPage .package .guideContent {
+    display: flex;
+    padding-top: 25px;
+  }
+
+  .topPage .package .companyLogo {
+    display: flex;
+    align-items: center;
+    min-width: 236px;
+  }
+
+  .topPage .package .guideText {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+/*================================
+	contact
+=================================*/
+
+  .topPage .contact {
+    padding: 207px 0 170px;
+    margin-top: -141px;
+  }
+
+  .topPage .contact .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topPage .contact .sectionTitle {
+    width: 144px;
+    height: auto;
+  }
+
+  .topPage .contact .sectionSubTitle {
+    margin-top: 18px;
+  }
+
+  .topPage .contact .contactText {
+    height: 30px;
+  }
+
+/*================================
+	footer
+=================================*/
+
+  footer {
+    height: 81px;
+  }
+
+  footer .logo {
+    width: 110px;
+  }
+}
